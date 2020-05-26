@@ -42,6 +42,7 @@ import com.bumptech.glide.RequestManager;
 import com.muzhi.camerasdk.adapter.FolderAdapter;
 import com.muzhi.camerasdk.adapter.ImageGridAdapter;
 import com.muzhi.camerasdk.model.CameraSdkParameterInfo;
+import com.muzhi.camerasdk.model.Constants;
 import com.muzhi.camerasdk.model.FolderInfo;
 import com.muzhi.camerasdk.model.ImageInfo;
 import com.muzhi.camerasdk.utils.AppUtils;
@@ -542,6 +543,10 @@ public class PhotoPickActivity extends BaseActivity {
 				intent = new Intent(this, CropperImageActivity.class);
 				intent.putExtras(b);
 				startActivity(intent);
+//				Constants.bitmap=((EfectFragment)fragments.get(current)).getCurrentBitMap();
+//				Intent intent1 = new Intent();
+//				intent1.setClassName(getApplication(), "com.muzhi.camerasdk.CutActivity");
+//				startActivityForResult(intent1,Constants.RequestCode_Croper);
 			}
 			else{
 				 setResult(RESULT_OK, intent);

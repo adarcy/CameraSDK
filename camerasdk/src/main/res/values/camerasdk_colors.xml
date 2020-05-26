@@ -6,9 +6,7 @@
     <!-- action_bar 按钮按下的背景颜色 -->
 
     <color name="camerasdk_main_bg">#26252c</color>
-    <color name="camerasdk_main_bottom_bg">#34343a</color>
-    <color name="camerasdk_main_tools_bg">#26252c</color>
-    
+
     <!-- 滤镜 -->
 
     <!-- 所有的边线 -->

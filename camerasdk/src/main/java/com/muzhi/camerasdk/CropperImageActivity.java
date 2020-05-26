@@ -146,9 +146,12 @@ public class CropperImageActivity extends BaseActivity {
 				new Thread() {
 					public void run() {
 						getViewBitmap();
-						Message m = new Message();
-						m.what = 0x111;
-						mHandler.sendMessage(m);
+//						Message m = new Message();
+//						m.what = 0x111;
+//						mHandler.sendMessage(m);
+						Intent intent1 = new Intent();
+						intent1.setClassName(getApplication(), "com.muzhi.camerasdk.CutActivity");
+						startActivityForResult(intent1, Constants.RequestCode_Croper);
 					}
 				}.start();
 			}
@@ -183,6 +186,7 @@ public class CropperImageActivity extends BaseActivity {
 	private void getViewBitmap() {
 		cropimage.setDrawingCacheEnabled(true);		
 		Bitmap bitmap = Bitmap.createBitmap(cropimage.getDrawingCache());
+		Constants.bitmap = bitmap;
 		// 清缓存
 		cropimage.destroyDrawingCache();
 		int w = cropimage.getWidth();
