@@ -35,6 +35,6 @@ dependencies {
     api 'com.android.support:appcompat-v7:25.3.1'
     testImplementation 'junit:junit:4.12'
 
-    api project(':camerasdkcommon')
+//    api project(':camerasdkcommon')
 
 }

@@ -2,9 +2,9 @@ package com.muzhi.camerasdk;
 
 import java.util.ArrayList;
 
-import com.muzhi.camerasdk.library.utils.PhotoUtils;
 import com.muzhi.camerasdk.model.CameraSdkParameterInfo;
 import com.muzhi.camerasdk.model.Constants;
+import com.muzhi.camerasdk.utils.PhotoUtils;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
 import android.content.Intent;
@@ -66,13 +66,13 @@ public class CropperImageActivity extends BaseActivity {
 					list.add(path);
 					mCameraSdkParameterInfo.setImage_list(list);*/
 					
-					b.putSerializable(CameraSdkParameterInfo.EXTRA_PARAMETER, mCameraSdkParameterInfo);
-					Intent intent = new Intent(mContext, FilterImageActivity.class);
-					intent.putExtras(b);
-					startActivity(intent);
+//					b.putSerializable(CameraSdkParameterInfo.EXTRA_PARAMETER, mCameraSdkParameterInfo);
+//					Intent intent = new Intent(mContext, FilterImageActivity.class);
+//					intent.putExtras(b);
+//					startActivity(intent);
 				}
 				else{
-					String path=PhotoUtils.saveAsBitmap(CropperImageActivity.this,itbmp);
+					String path= PhotoUtils.saveAsBitmap(CropperImageActivity.this,itbmp);
 					PhotoPickActivity.instance.getForResultComplate(path);
 				}
 								

@@ -543,29 +543,14 @@ public class PhotoPickActivity extends BaseActivity {
 				intent.putExtras(b);
 				startActivity(intent);
 			}
-			else if(mCameraSdkParameterInfo.isFilter_image()){
-				//跳转到滤镜	    		
-				intent = new Intent(this, FilterImageActivity.class);
-				intent.putExtras(b);
-				startActivity(intent);
-			}
 			else{
 				 setResult(RESULT_OK, intent);
 		         finish();
 			}
 		}
 		else{
-			//多选模式
-			if(mCameraSdkParameterInfo.isFilter_image()){
-				//跳转到滤镜	    		
-				intent = new Intent(this, FilterImageActivity.class);
-				intent.putExtras(b);
-				startActivity(intent);
-			}
-			else{
 				 setResult(RESULT_OK, intent);
 		         finish();
-			}
 		}
     	 
     }

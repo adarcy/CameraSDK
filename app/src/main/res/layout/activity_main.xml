@@ -92,8 +92,7 @@
 	            android:layout_height="wrap_content"
 	            android:layout_marginLeft="30dip" />
 	        <RadioButton
-	            android:id="@+id/no_show"
-	            android:text="@string/no"
+				android:text="@string/no"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_marginLeft="30dip" />
@@ -123,8 +122,7 @@
 	            android:layout_height="wrap_content" 
 	            android:layout_marginLeft="30dip"/>
 	        <RadioButton
-	            android:id="@+id/crop_no"
-	            android:text="@string/no"
+				android:text="@string/no"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content" 
 	            android:layout_marginLeft="30dip"
@@ -155,8 +153,7 @@
 	            android:layout_height="wrap_content" 
 	            android:layout_marginLeft="30dip"/>
 	        <RadioButton
-	            android:id="@+id/filter_no"
-	            android:text="@string/no"
+				android:text="@string/no"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content" 
 	            android:layout_marginLeft="30dip"

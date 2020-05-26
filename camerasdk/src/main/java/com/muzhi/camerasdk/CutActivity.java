@@ -1,7 +1,7 @@
 package com.muzhi.camerasdk;
 
-import com.muzhi.camerasdk.library.utils.PhotoUtils;
 import com.muzhi.camerasdk.model.Constants;
+import com.muzhi.camerasdk.utils.PhotoUtils;
 import com.muzhi.camerasdk.view.CropImageView;
 
 import android.graphics.Bitmap;

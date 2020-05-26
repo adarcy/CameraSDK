@@ -1,6 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/layout_root"
     android:orientation="vertical"
     android:background="@color/camerasdk_main_bg"
     android:layout_width="match_parent"
@@ -29,7 +28,6 @@
     
     
     <RelativeLayout
-        android:id="@+id/content_container"
         android:layout_width="match_parent"
         android:layout_height="55dip"
         android:background="@color/camerasdk_main_tools_bg">
@@ -91,9 +89,8 @@
            style="@style/camerasdk_radio_button" 
            android:text="裁剪"
            android:drawableTop="@drawable/camerasdk_selector_cropper_button"/>
-       <RadioButton 
-           android:id="@+id/button_rotation" 
-           style="@style/camerasdk_radio_button" 
+       <RadioButton
+           style="@style/camerasdk_radio_button"
            android:text="旋转"
            android:drawableTop="@drawable/camerasdk_selector_rotation_button"
            android:layout_marginLeft="100dip"/>

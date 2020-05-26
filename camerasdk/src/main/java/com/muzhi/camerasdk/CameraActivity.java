@@ -37,9 +37,11 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-import com.muzhi.camerasdk.library.utils.*;
-import com.muzhi.camerasdk.library.views.CameraGrid;
+import com.muzhi.camerasdk.utils.CameraHelper;
 import com.muzhi.camerasdk.utils.CameraManager;
+import com.muzhi.camerasdk.utils.ScreenUtils;
+import com.muzhi.camerasdk.utils.T;
+import com.muzhi.camerasdk.view.CameraGrid;
 
 
 /**

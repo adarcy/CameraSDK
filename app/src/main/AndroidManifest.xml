@@ -41,10 +41,7 @@
 	    <activity android:name="com.muzhi.camerasdk.CropperImageActivity" />
 	    <activity android:name="com.muzhi.camerasdk.FilterImageActivity" />
         <activity android:name="com.muzhi.camerasdk.CutActivity" />
-        <activity android:name="com.muzhi.camerasdk.PhotoEnhanceActivity" />
-        <activity android:name="com.muzhi.camerasdk.StickerActivity" />
-        <activity android:name="com.muzhi.camerasdk.GraffitiActivity" />
-        
+
         
         
         

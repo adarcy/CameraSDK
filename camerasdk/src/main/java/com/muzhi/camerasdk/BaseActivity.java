@@ -2,7 +2,6 @@ package com.muzhi.camerasdk;
 
 
 
-import com.muzhi.camerasdk.library.utils.MResource;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -11,6 +10,8 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+
+import com.muzhi.camerasdk.utils.MResource;
 
 
 public abstract class BaseActivity extends FragmentActivity{
@@ -25,7 +26,7 @@ public abstract class BaseActivity extends FragmentActivity{
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//不可横屏幕
 	}
 	
-	/*@TargetApi(19) 
+	/*@TargetApi(19)
 	private void setTranslucentStatus(boolean on) {
 		Window win = getWindow();
 		WindowManager.LayoutParams winParams = win.getAttributes();
@@ -37,16 +38,16 @@ public abstract class BaseActivity extends FragmentActivity{
 		}
 		win.setAttributes(winParams);
 	}*/
-	
-	
-	
+
+
+
 	public void setActionBarTitle(String s) {
 		if(mActionBarTitle==null){
 			mActionBarTitle=(TextView)findViewById(MResource.getIdRes(mContext, "camerasdk_actionbar_title"));
 		}
 		mActionBarTitle.setText(s);
 	}
-	
+
 	//显示返回按钮
 	public void showLeftIcon(){
 		if(btn_back==null){
@@ -54,7 +55,7 @@ public abstract class BaseActivity extends FragmentActivity{
 		}
 		btn_back.setVisibility(View.VISIBLE);
 		btn_back.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -63,5 +64,5 @@ public abstract class BaseActivity extends FragmentActivity{
 		});
 	}
 
-	
+
 }
